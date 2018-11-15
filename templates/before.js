@@ -20,6 +20,10 @@ var location = {
 };
 var document = { body: {}, createTextNode: function() {}, location: location };
 
+if (typeof File === "undefined") {
+  File = function() {};
+}
+
 if (typeof FileList === "undefined") {
     FileList = function() {};
 }
